@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 
+<head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 
 <style>
@@ -50,16 +51,16 @@ a:active
 }
 </style>
 
-<head>
+
 <title>POTD Map (Floors 1-10)</title>
 </head>
 
 <body bgcolor="black">
 <h1>Floors 1-10</h1>
-<h2>Instructions</h2>
-<p>POTD floors are generated as subsets of a master floor layout.  The master floor layouts are 21 rooms layed out in a 5x5 grid (with the four corners of the grid not containing a room).  There are two master floor layouts that can be chosen between (Called 'A' and 'B' here).</p>
+<h2>General Information</h2>
+<p>POTD floors are generated as subsets of a master floor layout.  The master floor layouts are 21 rooms arranged in a 5x5 grid (with the four corners of the grid not containing a room).  There are two master floor layouts that can be chosen between (Called <a href="images/Layout-A.png">'A'</a> and <a href="images/Layout-B.png">'B'</a> here).</p>
 <p>Once a master floor layout is chosen, any number of contiguous rooms are chosen, and all other rooms from the master layout are sealed off.</p>
-<p>In order to help identify rooms, thumbnails of each room from above are laid out in the master grid.  Cell background colors are the color that the room's ambient light is tinted (where applicable).  Hallway shapes between rooms are also shown.  At one point, SE had stated that they changed hallways into rooms with beacons to be straight.  I am not certain if this means that some hallways shapes may be invalid, or if it affected where beacons are placed (or neither).</p>
+<p>In order to help identify rooms, thumbnails of each room from above are placed on the master grid.  Cell background colors are the color that the room's ambient light is tinted (where applicable).  Hallway shapes between rooms are constant also, but are not shown here, as those seemed to make finding rooms on the grids slower compared to just looking at room details.</p>
 <p>The following colors are used to indicate locations on the maps:</p>
 <ul>
 <li><font color="#00ff00">Green:</font> Hoard Locations (with visual evidence provided)</li>
@@ -94,7 +95,7 @@ a:active
 	<tr>
 		<td>1</td>
 		<td bgcolor="black">
-			1-1 (No Room)
+			(No Room)
 		</td>
 		<td bgcolor="#c1a700">
 			<a href="images/A-2-1.png"><img src="images/A-2-1.png" alt="2-1"></a>
@@ -106,7 +107,7 @@ a:active
 			<a href="images/A-4-1.png"><img src="images/A-4-1.png" alt="4-1"></a>
 		</td>
 		<td bgcolor="black">
-			5-1 (No Room)
+			(No Room)
 		</td>
 	</tr>
 	<tr>
@@ -160,13 +161,13 @@ a:active
 			<a href="images/A-4-4.png"><img src="images/A-4-4.png" alt="4-4"></a>
 		</td>
 		<td bgcolor="#960000">
-			5-4 (Null)
+			<a href="images/A-5-4.png"><img src="images/A-5-4.png" alt="5-4"></a>
 		</td>
 	</tr>
 	<tr>
 		<td>5</td>
 		<td bgcolor="black">
-			1-5 (No Room)
+			(No Room)
 		</td>
 		<td bgcolor="#c1a700">
 			<a href="images/A-2-5.png"><img src="images/A-2-5.png" alt="2-5"></a>
@@ -178,7 +179,7 @@ a:active
 			<a href="images/A-4-5.png"><img src="images/A-4-5.png" alt="4-5"></a>
 		</td>
 		<td bgcolor="black">
-			5-5 (No Room)
+			(No Room)
 		</td>
 	</tr>
 </table>
@@ -200,7 +201,7 @@ a:active
 	<tr>
 		<td>1</td>
 		<td bgcolor="black">
-			1-1 (No Room)
+			(No Room)
 		</td>
 		<td bgcolor="#c1a700">
 			<a href="images/B-2-1.png"><img src="images/B-2-1.png" alt="2-1"></a>
@@ -212,7 +213,7 @@ a:active
 			<a href="images/B-4-1.png"><img src="images/B-4-1.png" alt="4-1"></a>
 		</td>
 		<td bgcolor="black">
-			5-1 (No Room)
+			(No Room)
 		</td>
 	</tr>
 	<!-- Hallway Line Drawings -->
@@ -235,7 +236,7 @@ a:active
 		<td bgcolor="#c1a700">
 			<a href="images/B-3-2.png"><img src="images/B-3-2.png" alt="3-2"></a>
 		</td>
-		<td bgcolor="#960000">
+		<td bgcolor="#7d007d">
 			<a href="images/B-4-2.png"><img src="images/B-4-2.png" alt="4-2"></a>
 		</td>
 		<td bgcolor="#c1a700">
@@ -281,7 +282,7 @@ a:active
 	<tr>
 		<td>5</td>
 		<td bgcolor="black">
-			1-5 (No Room)
+			(No Room)
 		</td>
 		<td bgcolor="#005500">
 			<a href="images/B-2-5.png"><img src="images/B-2-5.png" alt="2-5"></a>
@@ -293,12 +294,12 @@ a:active
 			<a href="images/B-4-5.png"><img src="images/B-4-5.png" alt="4-5"></a>
 		</td>
 		<td bgcolor="black">
-			5-5 (No Room)
+			(No Room)
 		</td>
 	</tr>
 </table>
 
 <h2>Credits</h2>
-<p>Some information on basic floor layout and many locations of hoard spawn points came from a <a href="https://www.reddit.com/r/ffxiv/comments/7ilrif/data_collection_of_accursed_hoard_banded_coffer/">reddit post</a> by <a href="https://www.reddit.com/user/AccursedHoard">/u/AccursedHoard</a> and an associated comment from<a href="https://www.reddit.com/user/MyImoutoIsMyWaifu">/u/MyImoutoIsMyWaifu</a></p>
+<p>Some initial information on basic floor layout and many locations of hoard spawn points came from a <a href="https://www.reddit.com/r/ffxiv/comments/7ilrif/data_collection_of_accursed_hoard_banded_coffer/">reddit post</a> by <a href="https://www.reddit.com/user/AccursedHoard">/u/AccursedHoard</a> and an associated comment from<a href="https://www.reddit.com/user/MyImoutoIsMyWaifu">/u/MyImoutoIsMyWaifu</a></p>
 </body>
 </html>
