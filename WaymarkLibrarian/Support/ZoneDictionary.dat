@@ -1,4 +1,4 @@
-GameVersion = 2020.02.26.0000.0001
+GameVersion = 2020.03.27.0000.0000
 1 = The Thousand Maws of Toto-Rak
 2 = The Tam-Tara Deepcroft
 3 = Copperbell Mines
@@ -292,6 +292,7 @@ GameVersion = 2020.02.26.0000.0001
 719 = Ashfall
 720 = Ashfall
 721 = The <Emphasis>Endeavor</Emphasis>
+725 = Transmission Control
 726 = The Halo
 727 = The Halo
 728 = Great Glacier
