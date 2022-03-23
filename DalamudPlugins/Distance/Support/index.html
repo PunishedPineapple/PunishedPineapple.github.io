@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="icon" type="image/png" href="../images/pomander_of_intuition.png">
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>-->
+
+<script>
+
+async function tableCreate()
+{
+  const body = document.body,
+        tbl = document.getElementById("AggroDataTable").tBodies[0],
+		versionStringNode = document.getElementById( "AggroDataVersionText" );
+<!--  tbl.style.width = '100px'; -->
+<!--  tbl.style.border = '1px solid black'; -->
+
+	var aggroDistanceDataArray = [];
+	
+	await fetch( "./AggroDistances.dat" )
+	//await fetch( "https://raw.githubusercontent.com/PunishedPineapple/PunishedPineapple.github.io/master/DalamudPlugins/Distance/Support/AggroDistances.dat" )
+	.then( response => response.text() )
+	.then( ( data ) =>
+	{
+		var fileLines = data.split( /\r\n|\n/ );
+		versionStringNode.innerText = fileLines[0];
+		for( let i = 1; i < fileLines.length; i++ )
+		{
+			aggroDistanceDataArray.push( fileLines[i].split( /=/ ) );
+		}
+	} );
+	
+  for( let i = 0; i < aggroDistanceDataArray.length; i++ )
+  {
+    const tr = tbl.insertRow();
+    for (let j = 0; j < aggroDistanceDataArray[i].length; j++)
+	{
+        const td = tr.insertCell();
+        td.appendChild(document.createTextNode(`${aggroDistanceDataArray[i][j]}`));
+    }
+  }
+}
+
+</script>
+
+<style>
+h1
+{
+	color: #cccccc;
+}
+h2
+{
+	color: #cccccc;
+}
+p
+{
+	color: #cccccc;
+}
+li
+{
+	color: #cccccc;
+}
+th
+{
+	color: #cccccc;
+	background-color: #333333;
+	padding: 10px;
+}
+td
+{
+	text-align: center;
+	color: #cccccc;
+	padding: 10px;
+}
+tr:nth-child(even)
+{
+	background-color: #111111;
+}
+img
+{
+	zoom: 10%;
+	<!-- *****Transform is more widely supported, but makes the table cell full-size regardless of scaled image size.***** transform: scale(0.2);-->
+	border: 0;
+}
+a:link
+{
+	color: gray;
+}
+a:visited
+{
+	color: gray;
+}
+a:hover
+{
+	color: gray;
+}
+a:active
+{
+	color: gray;
+}
+</style>
+
+
+<title>Enemy Aggro Distance Data</title>
+</head>
+
+<body bgcolor="black" onload="tableCreate()">
+
+<h1>Enemy Aggro Distances</h1>
+<h2>General Information</h2>
+<p>These distances are from the center of the player to the edge of the boss's hitring.  These values should be considered +0y, -0.1y accuracy, as the game seems to have a small, but consistent amount of inaccuracy.  The vast majority of the time, the boss will actually aggro at ~0.03y closer than the distance shown here, although for some bosses, I have seen as low as 0.09y.</p>
+<p>This data does not include cone angles for sight-based enemies.  Data was intended for use with primarily bosses, of which all known aggro by proximity, or possibly by true sight with a very wide cone (this would explain anomalies like the e8s blind spot).
+<p>One last thing to note: A given BNpc seems to <em>usually</em> have the same aggro distance across territories, but there is at least one case where this does not hold true (ADS in t1 and t2), so it cannot be assumed.
+
+<h2>Data:</h2>
+<p id="AggroDataVersionText" />
+<table id="AggroDataTable">
+<thead>
+<tr>
+<th>Territory</th>
+<th>BNpc ID</th>
+<th>Aggro Range (y)</th>
+<th>BNpc Name</th>
+</tr>
+</thead>
+<tbody />
+</table>
+
+</body>
+</html>
