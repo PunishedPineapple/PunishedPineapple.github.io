@@ -1,0 +1,1605 @@
+{
+  "Version": "2022.03.01.0000.0000-001",
+  "Data": [
+    {
+      "TerritoryType": 142,
+      "NameID": 3046,
+      "AggroDistance_Yalms": 8.0,
+      "EnglishName": "Typhon",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 142,
+      "NameID": 3047,
+      "AggroDistance_Yalms": 8.0,
+      "EnglishName": "Ultros",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 143,
+      "NameID": 3330,
+      "AggroDistance_Yalms": 40.0,
+      "EnglishName": "Vishap",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 193,
+      "NameID": 3192,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Imdugud",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 194,
+      "NameID": 3197,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Kaliya",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 195,
+      "NameID": 3204,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Phoenix",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 196,
+      "NameID": 3210,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Bahamut Prime",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 202,
+      "NameID": 1185,
+      "AggroDistance_Yalms": 9.0,
+      "EnglishName": "Ifrit",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 206,
+      "NameID": 1801,
+      "AggroDistance_Yalms": 9.0,
+      "EnglishName": "Titan",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 207,
+      "NameID": 718,
+      "AggroDistance_Yalms": 13.0,
+      "EnglishName": "Whiskerwall Kupdi Koop",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 208,
+      "NameID": 1644,
+      "AggroDistance_Yalms": 11.0,
+      "EnglishName": "Garuda",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 241,
+      "NameID": 1459,
+      "AggroDistance_Yalms": 15.0,
+      "EnglishName": "ADS",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 241,
+      "NameID": 1466,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Caduceus",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 242,
+      "NameID": 1471,
+      "AggroDistance_Yalms": 10.0,
+      "EnglishName": "Monitoring Node",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 242,
+      "NameID": 1472,
+      "AggroDistance_Yalms": 10.0,
+      "EnglishName": "Defense Node",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 242,
+      "NameID": 1473,
+      "AggroDistance_Yalms": 10.0,
+      "EnglishName": "Disposal Node",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 242,
+      "NameID": 1459,
+      "AggroDistance_Yalms": 10.0,
+      "EnglishName": "ADS",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 242,
+      "NameID": 1470,
+      "AggroDistance_Yalms": 10.0,
+      "EnglishName": "Sanitary Node",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 242,
+      "NameID": 1469,
+      "AggroDistance_Yalms": 10.0,
+      "EnglishName": "Attack Node",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 242,
+      "NameID": 1468,
+      "AggroDistance_Yalms": 10.0,
+      "EnglishName": "Quarantine Node",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 244,
+      "NameID": 1474,
+      "AggroDistance_Yalms": 18.0,
+      "EnglishName": "Clockwork Bug",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 245,
+      "NameID": 1482,
+      "AggroDistance_Yalms": 30.0,
+      "EnglishName": "Twintania",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 281,
+      "NameID": 2550,
+      "AggroDistance_Yalms": 9.0,
+      "EnglishName": "Leviathan",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 292,
+      "NameID": 1185,
+      "AggroDistance_Yalms": 9.0,
+      "EnglishName": "Ifrit",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 293,
+      "NameID": 1801,
+      "AggroDistance_Yalms": 9.0,
+      "EnglishName": "Titan",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 294,
+      "NameID": 1644,
+      "AggroDistance_Yalms": 11.0,
+      "EnglishName": "Garuda",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 295,
+      "NameID": 1185,
+      "AggroDistance_Yalms": 9.0,
+      "EnglishName": "Ifrit",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 296,
+      "NameID": 1801,
+      "AggroDistance_Yalms": 9.0,
+      "EnglishName": "Titan",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 297,
+      "NameID": 1644,
+      "AggroDistance_Yalms": 11.0,
+      "EnglishName": "Garuda",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 332,
+      "NameID": 2160,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Rhitahtyn sas Arvina",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 348,
+      "NameID": 2137,
+      "AggroDistance_Yalms": 8.0,
+      "EnglishName": "The Ultima Weapon",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 355,
+      "NameID": 2609,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Rafflesia",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 356,
+      "NameID": 2610,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Melusine",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 357,
+      "NameID": 2611,
+      "AggroDistance_Yalms": 8.0,
+      "EnglishName": "The Avatar",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 358,
+      "NameID": 2612,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Nael deus Darnus",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 359,
+      "NameID": 2550,
+      "AggroDistance_Yalms": 9.0,
+      "EnglishName": "Leviathan",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 364,
+      "NameID": 2752,
+      "AggroDistance_Yalms": 11.0,
+      "EnglishName": "Good King Moggle Mog XII",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 366,
+      "NameID": 2665,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Gilgamesh",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 368,
+      "NameID": 2162,
+      "AggroDistance_Yalms": 5.0,
+      "EnglishName": "Dhorme Chimera",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 369,
+      "NameID": 2161,
+      "AggroDistance_Yalms": 4.0,
+      "EnglishName": "Hydra",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 374,
+      "NameID": 2832,
+      "AggroDistance_Yalms": 5.0,
+      "EnglishName": "Ramuh",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 375,
+      "NameID": 2832,
+      "AggroDistance_Yalms": 5.0,
+      "EnglishName": "Ramuh",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 377,
+      "NameID": 2994,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Shiva",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 378,
+      "NameID": 2994,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Shiva",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 380,
+      "NameID": 2609,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Rafflesia",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 381,
+      "NameID": 2610,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Melusine",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 382,
+      "NameID": 2611,
+      "AggroDistance_Yalms": 8.0,
+      "EnglishName": "The Avatar",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 383,
+      "NameID": 2612,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Nael deus Darnus",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 394,
+      "NameID": 887,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Odin",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 396,
+      "NameID": 2665,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Gilgamesh",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 396,
+      "NameID": 3304,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Enkidu",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 426,
+      "NameID": 3287,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Nabriales",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 432,
+      "NameID": 3660,
+      "AggroDistance_Yalms": 8.0,
+      "EnglishName": "Ravana",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 437,
+      "NameID": 3632,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "King Thordan",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 442,
+      "NameID": 3745,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Faust",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 442,
+      "NameID": 3747,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Oppressor",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 444,
+      "NameID": 3765,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Living Liquid",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 446,
+      "NameID": 3660,
+      "AggroDistance_Yalms": 8.0,
+      "EnglishName": "Ravana",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 448,
+      "NameID": 3632,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "King Thordan",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 449,
+      "NameID": 3745,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Faust",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 449,
+      "NameID": 3747,
+      "AggroDistance_Yalms": 9999.0,
+      "EnglishName": "Oppressor",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 451,
+      "NameID": 3765,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Living Liquid",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 517,
+      "NameID": 4776,
+      "AggroDistance_Yalms": 7.0,
+      "EnglishName": "Sephirot",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 520,
+      "NameID": 3745,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Faust",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 520,
+      "NameID": 4687,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Ratfinx Twinkledinks",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 521,
+      "NameID": 4699,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Blaster",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 521,
+      "NameID": 4703,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Brawler",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 521,
+      "NameID": 4705,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Swindler",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 521,
+      "NameID": 4706,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Vortexer",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 522,
+      "NameID": 3376,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Quickthinx Allthoughts",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 523,
+      "NameID": 4707,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Onslaughter",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 524,
+      "NameID": 4776,
+      "AggroDistance_Yalms": 7.0,
+      "EnglishName": "Sephirot",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 529,
+      "NameID": 3745,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Faust",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 529,
+      "NameID": 4687,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Ratfinx Twinkledinks",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 530,
+      "NameID": 4699,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Blaster",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 530,
+      "NameID": 4703,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Brawler",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 530,
+      "NameID": 4705,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Swindler",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 530,
+      "NameID": 4706,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Vortexer",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 531,
+      "NameID": 3376,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Quickthinx Allthoughts",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 532,
+      "NameID": 4707,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Onslaughter",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 559,
+      "NameID": 3458,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Nidhogg",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 566,
+      "NameID": 3458,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Nidhogg",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 576,
+      "NameID": 5199,
+      "AggroDistance_Yalms": 10.0,
+      "EnglishName": "Sophia",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 577,
+      "NameID": 5199,
+      "AggroDistance_Yalms": 10.0,
+      "EnglishName": "Sophia",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 580,
+      "NameID": 5169,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Faust Z",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 580,
+      "NameID": 5170,
+      "AggroDistance_Yalms": -5.0,
+      "EnglishName": "Refurbisher 0",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 581,
+      "NameID": 5180,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Lamebrix Strikebocks",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 582,
+      "NameID": 5186,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Cruise Chaser",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 583,
+      "NameID": 5193,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Alexander Prime",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 584,
+      "NameID": 5169,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Faust Z",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 584,
+      "NameID": 5170,
+      "AggroDistance_Yalms": -5.0,
+      "EnglishName": "Refurbisher 0",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 585,
+      "NameID": 5180,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Lamebrix Strikebocks",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 586,
+      "NameID": 5186,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Cruise Chaser",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 587,
+      "NameID": 5193,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Alexander Prime",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 637,
+      "NameID": 5567,
+      "AggroDistance_Yalms": 0.0,
+      "EnglishName": "Zurvan",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 638,
+      "NameID": 5567,
+      "AggroDistance_Yalms": 0.0,
+      "EnglishName": "Zurvan",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 674,
+      "NameID": 6221,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Susano",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 677,
+      "NameID": 6221,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Susano",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 679,
+      "NameID": 5640,
+      "AggroDistance_Yalms": -21.0,
+      "EnglishName": "Shinryu",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 691,
+      "NameID": 5629,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Alte Roite",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 692,
+      "NameID": 5631,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Catastrophe",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 693,
+      "NameID": 5633,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Halicarnassus",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 694,
+      "NameID": 6052,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Exdeath",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 695,
+      "NameID": 5629,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Alte Roite",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 696,
+      "NameID": 5631,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Catastrophe",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 697,
+      "NameID": 5633,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Halicarnassus",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 698,
+      "NameID": 6052,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Exdeath",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 698,
+      "NameID": 0,
+      "AggroDistance_Yalms": 9999.0,
+      "EnglishName": "-----",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 719,
+      "NameID": 6386,
+      "AggroDistance_Yalms": 7.0,
+      "EnglishName": "Dreaming Kshatriya",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 720,
+      "NameID": 6386,
+      "AggroDistance_Yalms": 7.0,
+      "EnglishName": "Dreaming Kshatriya",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 730,
+      "NameID": 5640,
+      "AggroDistance_Yalms": -21.0,
+      "EnglishName": "Shinryu",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 746,
+      "NameID": 7092,
+      "AggroDistance_Yalms": 7.0,
+      "EnglishName": "Byakko",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 748,
+      "NameID": 7127,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Phantom Train",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 750,
+      "NameID": 7107,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Guardian",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 751,
+      "NameID": 7131,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Kefka",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 752,
+      "NameID": 7127,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Phantom Train",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 754,
+      "NameID": 7107,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Guardian",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 755,
+      "NameID": 7131,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Kefka",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 755,
+      "NameID": 0,
+      "AggroDistance_Yalms": 9999.0,
+      "EnglishName": "-----",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 758,
+      "NameID": 7092,
+      "AggroDistance_Yalms": 7.0,
+      "EnglishName": "Byakko",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 761,
+      "NameID": 7221,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Rathalos",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 762,
+      "NameID": 7221,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Rathalos",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 778,
+      "NameID": 7225,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Tsukuyomi",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 779,
+      "NameID": 7225,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Tsukuyomi",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 798,
+      "NameID": 7691,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Chaos",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 799,
+      "NameID": 7641,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Midgardsormr",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 800,
+      "NameID": 7695,
+      "AggroDistance_Yalms": 7.0,
+      "EnglishName": "Omega",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 801,
+      "NameID": 7633,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Omega-M",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 802,
+      "NameID": 7691,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Chaos",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 803,
+      "NameID": 7641,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Midgardsormr",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 804,
+      "NameID": 7695,
+      "AggroDistance_Yalms": 7.0,
+      "EnglishName": "Omega",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 805,
+      "NameID": 7633,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Omega-M",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 805,
+      "NameID": 0,
+      "AggroDistance_Yalms": 9999.0,
+      "EnglishName": "-----",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 806,
+      "NameID": 7570,
+      "AggroDistance_Yalms": 10.0,
+      "EnglishName": "Yojimbo",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 810,
+      "NameID": 7702,
+      "AggroDistance_Yalms": 7.0,
+      "EnglishName": "Suzaku",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 811,
+      "NameID": 7702,
+      "AggroDistance_Yalms": 7.0,
+      "EnglishName": "Suzaku",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 824,
+      "NameID": 7922,
+      "AggroDistance_Yalms": 7.0,
+      "EnglishName": "Seiryu",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 825,
+      "NameID": 7922,
+      "AggroDistance_Yalms": 7.0,
+      "EnglishName": "Seiryu",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 845,
+      "NameID": 8361,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Titania",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 846,
+      "NameID": 8353,
+      "AggroDistance_Yalms": 10.0,
+      "EnglishName": "Innocence",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 847,
+      "NameID": 8352,
+      "AggroDistance_Yalms": 12.0,
+      "EnglishName": "Hades",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 848,
+      "NameID": 8353,
+      "AggroDistance_Yalms": 10.0,
+      "EnglishName": "Innocence",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 849,
+      "NameID": 8345,
+      "AggroDistance_Yalms": 10.0,
+      "EnglishName": "Eden Prime",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 850,
+      "NameID": 8382,
+      "AggroDistance_Yalms": 8.0,
+      "EnglishName": "Voidwalker",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 851,
+      "NameID": 8486,
+      "AggroDistance_Yalms": 9.0,
+      "EnglishName": "Leviathan",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 852,
+      "NameID": 8350,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Titan",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 853,
+      "NameID": 8345,
+      "AggroDistance_Yalms": 10.0,
+      "EnglishName": "Eden Prime",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 854,
+      "NameID": 8382,
+      "AggroDistance_Yalms": 8.0,
+      "EnglishName": "Voidwalker",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 855,
+      "NameID": 8486,
+      "AggroDistance_Yalms": 9.0,
+      "EnglishName": "Leviathan",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 856,
+      "NameID": 8350,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Titan",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 858,
+      "NameID": 8361,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Titania",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 885,
+      "NameID": 8352,
+      "AggroDistance_Yalms": 12.0,
+      "EnglishName": "Hades",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 897,
+      "NameID": 9250,
+      "AggroDistance_Yalms": 9.0,
+      "EnglishName": "The Ruby Weapon",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 897,
+      "NameID": 0,
+      "AggroDistance_Yalms": 9999.0,
+      "EnglishName": "-----",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 902,
+      "NameID": 9281,
+      "AggroDistance_Yalms": 9.0,
+      "EnglishName": "Ramuh",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 903,
+      "NameID": 9287,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Garuda",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 904,
+      "NameID": 9298,
+      "AggroDistance_Yalms": 9.0,
+      "EnglishName": "The Idol of Darkness",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 905,
+      "NameID": 9353,
+      "AggroDistance_Yalms": 10.0,
+      "EnglishName": "Shiva",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 906,
+      "NameID": 9281,
+      "AggroDistance_Yalms": 9.0,
+      "EnglishName": "Ramuh",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 907,
+      "NameID": 9287,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Garuda",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 908,
+      "NameID": 9298,
+      "AggroDistance_Yalms": 9.0,
+      "EnglishName": "The Idol of Darkness",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 909,
+      "NameID": 9353,
+      "AggroDistance_Yalms": 10.0,
+      "EnglishName": "Shiva",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 912,
+      "NameID": 9250,
+      "AggroDistance_Yalms": 9.0,
+      "EnglishName": "The Ruby Weapon",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 912,
+      "NameID": 0,
+      "AggroDistance_Yalms": 9999.0,
+      "EnglishName": "-----",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 913,
+      "NameID": 9341,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Varis yae Galvus",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 922,
+      "NameID": 9462,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Warrior of Light",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 922,
+      "NameID": 0,
+      "AggroDistance_Yalms": 9999.0,
+      "EnglishName": "-----",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 923,
+      "NameID": 9462,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Warrior of Light",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 934,
+      "NameID": 9696,
+      "AggroDistance_Yalms": 6.0,
+      "EnglishName": "The Emerald Weapon",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 934,
+      "NameID": 0,
+      "AggroDistance_Yalms": 9999.0,
+      "EnglishName": "-----",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 935,
+      "NameID": 9696,
+      "AggroDistance_Yalms": 6.0,
+      "EnglishName": "The Emerald Weapon",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 935,
+      "NameID": 0,
+      "AggroDistance_Yalms": 9999.0,
+      "EnglishName": "-----",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 942,
+      "NameID": 9764,
+      "AggroDistance_Yalms": 10.0,
+      "EnglishName": "Cloud of Darkness",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 943,
+      "NameID": 9769,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Shadowkeeper",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 944,
+      "NameID": 9707,
+      "AggroDistance_Yalms": 10.0,
+      "EnglishName": "Fatebreaker",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 945,
+      "NameID": 9813,
+      "AggroDistance_Yalms": 7.0,
+      "EnglishName": "Eden's Promise",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 946,
+      "NameID": 9764,
+      "AggroDistance_Yalms": 10.0,
+      "EnglishName": "Cloud of Darkness",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 947,
+      "NameID": 9769,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Shadowkeeper",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 948,
+      "NameID": 9707,
+      "AggroDistance_Yalms": 10.0,
+      "EnglishName": "Fatebreaker",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 949,
+      "NameID": 9813,
+      "AggroDistance_Yalms": 7.0,
+      "EnglishName": "Eden's Promise",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 949,
+      "NameID": 0,
+      "AggroDistance_Yalms": 9999.0,
+      "EnglishName": "-----",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 950,
+      "NameID": 9953,
+      "AggroDistance_Yalms": -17.0,
+      "EnglishName": "The Diamond Weapon",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 951,
+      "NameID": 9953,
+      "AggroDistance_Yalms": -17.0,
+      "EnglishName": "The Diamond Weapon",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 1003,
+      "NameID": 10345,
+      "AggroDistance_Yalms": 6.0,
+      "EnglishName": "Erichthonios",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 1005,
+      "NameID": 10348,
+      "AggroDistance_Yalms": 14.0,
+      "EnglishName": "Hippokampos",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 1007,
+      "NameID": 10720,
+      "AggroDistance_Yalms": 12.0,
+      "EnglishName": "Phoinix",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 1009,
+      "NameID": 10742,
+      "AggroDistance_Yalms": 11.0,
+      "EnglishName": "Hesperos",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 1009,
+      "NameID": 10744,
+      "AggroDistance_Yalms": 10.0,
+      "EnglishName": "Hesperos",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 0,
+      "NameID": 0,
+      "AggroDistance_Yalms": 0.0,
+      "EnglishName": "Zodiark",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 0,
+      "NameID": 0,
+      "AggroDistance_Yalms": 0.0,
+      "EnglishName": "Hydaelyn",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 0,
+      "NameID": 0,
+      "AggroDistance_Yalms": 0.0,
+      "EnglishName": "Zodiark",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 0,
+      "NameID": 0,
+      "AggroDistance_Yalms": 0.0,
+      "EnglishName": "Hydaelyn",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 0,
+      "NameID": 0,
+      "AggroDistance_Yalms": 0.0,
+      "EnglishName": "Fatesinger",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 0,
+      "NameID": 0,
+      "AggroDistance_Yalms": 0.0,
+      "EnglishName": "Erichthonios",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 0,
+      "NameID": 0,
+      "AggroDistance_Yalms": 0.0,
+      "EnglishName": "Hippokampos",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 0,
+      "NameID": 0,
+      "AggroDistance_Yalms": 0.0,
+      "EnglishName": "Phoinix",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 0,
+      "NameID": 0,
+      "AggroDistance_Yalms": 0.0,
+      "EnglishName": "Hesperos",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 0,
+      "NameID": 0,
+      "AggroDistance_Yalms": 0.0,
+      "EnglishName": "Twintania",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 0,
+      "NameID": 0,
+      "AggroDistance_Yalms": 0.0,
+      "EnglishName": "Garuda",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    },
+    {
+      "TerritoryType": 0,
+      "NameID": 0,
+      "AggroDistance_Yalms": 0.0,
+      "EnglishName": "Living Liquid",
+      "ColloquialZoneName": "",
+      "Comment": ""
+    }
+  ]
+}
