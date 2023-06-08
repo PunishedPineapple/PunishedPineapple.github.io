@@ -1,4 +1,4 @@
-Version = 2023.05.18.0000.0000-003
+Version = 2023.05.31.0000.0000-001
 142=3046=8=Typhon
 142=3047=8=Ultros
 143=3330=40=Vishap
@@ -201,7 +201,9 @@ Version = 2023.05.18.0000.0000-003
 1048=2137=8=The Ultima Weapon
 1071=10298=14=Barbariccia
 1072=10298=14=Barbariccia
+1081=0=9999=-----
 1082=11440=5=Proto-Carbuncle
+1083=11381=5=Hegemone
 1084=11381=5=Hegemone
 1085=11374=-14=Agdistis
 1086=11374=-14=Agdistis
@@ -216,3 +218,6 @@ Version = 2023.05.18.0000.0000-003
 1148=12369=12=Kokytos
 1149=12354=1=Pandæmonium
 1150=12354=1=Pandæmonium
+1151=12388=5=Themis
+1152=12388=5=Themis
+1157=5567=0=Zurvan
