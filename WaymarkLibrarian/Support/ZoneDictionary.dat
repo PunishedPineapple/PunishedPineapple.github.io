@@ -1,4 +1,4 @@
-GameVersion = 2023.09.28.0000.0000
+GameVersion = 2023.10.23.0000.0000
 1 = The Thousand Maws of Toto–Rak
 2 = The Tam–Tara Deepcroft
 3 = Copperbell Mines
@@ -386,7 +386,10 @@ GameVersion = 2023.09.28.0000.0000
 950 = The Voidcast Dais (Extreme)
 951 = Containment Bay Z1T9 (Unreal)
 952 = Ocean Fishing
+961 = Aloalo Island
 962 = Thaleia
 963 = The Singularity Reactor (Unreal)
 964 = The Abyssal Fracture
 965 = The Abyssal Fracture (Extreme)
+979 = Another Aloalo Island
+980 = Another Aloalo Island (Savage)
