@@ -1,4 +1,4 @@
-Version = 2025.03.27.0000.0000-002
+Version = 2025.03.27.0000.0000-004
 142=3046=8=Typhon
 142=3047=8=Ultros
 143=3330=40=Vishap
@@ -184,7 +184,7 @@ Version = 2025.03.27.0000.0000-002
 947=9769=14=Shadowkeeper
 948=9707=10=Fatebreaker
 949=9813=7=Eden's Promise
-949=0=9999=-----
+949=9832=7=Oracle of Darkness
 950=9953=-17=The Diamond Weapon
 951=9953=-17=The Diamond Weapon
 968=0=9999=-----
@@ -246,3 +246,4 @@ Version = 2025.03.27.0000.0000-002
 1243=13029=1=Queen Eternal
 1257=13778=10=Dancing Green
 1259=13822=9=Sugar Riot
+1261=13756=10=Brute Abombinator
