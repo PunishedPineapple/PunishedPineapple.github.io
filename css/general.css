@@ -1,0 +1,56 @@
+body
+{
+	color: #ff0000;	/*We should not have unencapsulated text, so make it obvious.*/
+}
+
+h1
+{
+	color: #cccccc;
+}
+
+h2
+{
+	color: #cccccc;
+}
+
+p
+{
+	color: #cccccc;
+}
+
+label
+{
+	color: #cccccc;
+}
+
+li
+{
+	color: #cccccc;
+}
+
+td
+{
+	text-align: center;
+	color: #cccccc;
+	padding: 10px;
+}
+
+a:link
+{
+	color: gray;
+}
+
+a:visited
+{
+	color: gray;
+}
+
+a:hover
+{
+	color: gray;
+}
+
+a:active
+{
+	color: gray;
+}

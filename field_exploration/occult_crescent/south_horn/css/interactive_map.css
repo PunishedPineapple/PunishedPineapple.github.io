@@ -1,0 +1,60 @@
+#InteractiveMapContainer
+{
+	display: flex;
+	flex-direction: row;
+	/*border: 2px solid #cccccc;*/
+	margin: 2px;
+}
+
+#MapMarkerSelectionContainer
+{
+	/*width: stretch;*/
+	margin: 5px;
+	border: 2px solid #cccccc;
+	border-radius: 5px;
+	padding: 5px;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+#MapCanvasContainer
+{
+	display: flex;
+	flex: 1 1 200px;
+	margin: 5px;
+	max-height: 80vh;
+	max-width: 80vh;
+	position: relative;
+}
+
+#BaseMapImage
+{
+	flex-grow: 1;
+	flex-shrink: 1;
+	min-width: 200px;
+	min-height: 200px;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.map-marker
+{
+	width: 25px;
+	height: 25px;
+	/* If the css transform has bad performance, we can do the following instead; we just have to manually keep the sizes and margins consistent. */
+	/* margin-left: -10px; /* Cheap hack to help center things.  Half of the element size. */
+	/* margin-top: -10px; /* Cheap hack to help center things.  Half of the element size. */
+	transform: translate(-50%,-50%);
+	/*background-color: #cccccc;*/
+	position: absolute;
+}
+
+.map-marker > *
+{
+	width: fit-content;
+	height: fit-content;
+	min-width: 5px;
+	min-height: 5px;
+	max-width: 100%;
+	max-height: 100%;
+}
