@@ -10,6 +10,7 @@
 	flex-direction: row;
 	/*border: 2px solid #cccccc;*/
 	margin: 2px;
+	overflow: hidden;
 }
 
 #MapMarkerSelectionContainer
@@ -19,8 +20,10 @@
 	border: 2px solid #cccccc;
 	border-radius: 5px;
 	padding: 5px;
-	flex-grow: 0;
+	flex-grow: 0.05;
 	flex-shrink: 0;
+	max-height: 90vh;
+	overflow-y: auto;
 }
 
 #MapCanvasContainer
