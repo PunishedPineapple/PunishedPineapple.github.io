@@ -2,14 +2,13 @@
 <html>
 
 	<head>
-	
-		<link rel="icon" type="image/png" href="../images/pomander_of_intuition.png">
+
+		<link rel="icon" type="image/png" href="./images/025207_hr1_nobg.png">
+
 		<link rel="stylesheet" type="text/css" href="../../../css/general.css">
 		<link rel="stylesheet" type="text/css" href="./css/interactive_map.css">
-		
-		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>-->
-		<script src="./js/InteractiveMap.js"></script>
 
+		<script src="./js/InteractiveMap.js"></script>
 
 		<title>Occult Crescent - South Horn Information</title>
 
@@ -19,20 +18,25 @@
 
 		<h1>South Horn</h1>
 
-		<h2>Treasure Locations</h2>
+		<h2>Treasure Information</h2>
 
-		<p>Personal chests in the field appear to have fixed spawn locations.  There are likely eight silver coffers and 60 bronze coffers.  This map shows the locations of those coffers, and any carrots or imp coffer locations observed so far.  The number of possible carrot spawns and imp coffer locations is unknown, and many are probably missing from this map.</p>
+		<p>Personal chests in the field appear to have fixed spawn locations.  There are likely eight silver coffers and 60 bronze coffers.  This map shows the locations of those coffers, and any carrot or imp coffer spawns observed so far.  The number of possible carrot and imp coffer locations is unknown, and many are probably missing from this map.</p>
 
 		<h2>Interactive Map</h2>
 
 		<div id="InteractiveMapContainer">
 
 			<div id="MapMarkerSelectionContainer">
+				<p class="map-checkbox-section-header">Treasure</p>
 				<input type="checkbox" id="BronzeCofferCheckbox" name="BronzeCofferCheckbox" value="Bronze Coffers" onchange="OnCheckChanged( this )"/><label for="BronzeCofferCheckbox"> Bronze Coffers</label><br />
 				<input type="checkbox" id="SilverCofferCheckbox" name="SilverCofferCheckbox" value="Silver Coffers"  onchange="OnCheckChanged( this )"/><label for="SilverCofferCheckbox" onchange="OnCheckChanged( this )"> Silver Coffers</label><br />
 				<input type="checkbox" id="CarrotCheckbox" name="CarrotCheckbox" value="Carrots"  onchange="OnCheckChanged( this )"/><label for="CarrotCheckbox"> Carrots</label><br />
 				<input type="checkbox" id="ImpCofferCheckbox" name="ImpCofferCheckbox" value="Imp Coffers"  onchange="OnCheckChanged( this )"/><label for="ImpCofferCheckbox"> Imp Coffers</label><br />
-				<!-- Additional marker types may be added here procedurally. -->
+				<br />
+				<p class="map-checkbox-section-header">Enemies</p>
+				<div id="EnemyMapMarkerCheckboxContainer">
+					<!-- Additional marker types may be added here procedurally. -->
+				</div>
 			</div>
 
 			<div id="MapCanvasContainer">
@@ -42,7 +46,6 @@
 
 		</div>
 
-		<p>The precision of any locations in this map has been slightly reduced to help keep contributors anonymous.  It should still be accurate enough for general use.</p>
 		<p>Base map images, icons, and any other applicable works are copyright Square Enix.</p>
 
 	</body>

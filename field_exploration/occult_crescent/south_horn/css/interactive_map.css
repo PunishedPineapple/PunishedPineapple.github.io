@@ -1,3 +1,9 @@
+.map-checkbox-section-header
+{
+	color: #dddddd;
+	font-weight: bold;
+}
+
 #InteractiveMapContainer
 {
 	display: flex;
@@ -22,8 +28,8 @@
 	display: flex;
 	flex: 1 1 200px;
 	margin: 5px;
-	max-height: 80vh;
-	max-width: 80vh;
+	max-height: 90vh;
+	max-width: 90vh;
 	position: relative;
 }
 
@@ -31,8 +37,8 @@
 {
 	flex-grow: 1;
 	flex-shrink: 1;
-	min-width: 200px;
-	min-height: 200px;
+	min-width: 5px;
+	min-height: 5px;
 	max-width: 100%;
 	max-height: 100%;
 }
@@ -49,7 +55,7 @@
 	position: absolute;
 }
 
-.map-marker > *
+.marker-icon
 {
 	width: fit-content;
 	height: fit-content;
@@ -57,4 +63,12 @@
 	min-height: 5px;
 	max-width: 100%;
 	max-height: 100%;
+}
+
+.marker-point
+{
+	width: 5px;
+	height: 5px;
+	border-radius: 500px;
+	background-color: #ff0000;
 }

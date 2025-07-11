@@ -1,9 +1,19 @@
 var gMapContainer;
-var gCarrotCoords = [[180,987],[180,987],[217,1912],[217,1912],[252,330],[280,1108],[296,1353],[296,1353],[314,572],[314,572],[322,1743],[322,1743],[448,1693],[470,658],[534,283],[585,1208],[585,1208],[623,506],[623,506],[751,1874],[850,1132],[939,228],[1273,1815],[1308,1611],[1308,1611],[1308,1611],[1490,1587],[1490,1587],[1490,1587],[1501,1163],[1501,1163],[1674,1165],[1674,1165],[1744,1295],[1796,1555],[1851,868],[1851,868],[1851,868],[1870,1801],[1889,809],[1889,809]];
+var gEnemyMapMarkerCheckboxContainer;
+
+var gBronzeCofferData;
+var gSilverCofferData;
+var gImpCofferData;
+var gCarrotData;
+
+var gBNpcData;
 
 function OnLoad()
 {
 	gMapContainer = document.getElementById( 'MapCanvasContainer' );
+	gEnemyMapMarkerCheckboxContainer = document.getElementById( 'EnemyMapMarkerCheckboxContainer' );
+	
+	LoadData();
 	
 	SetupDefaults();
 	
@@ -12,65 +22,140 @@ function OnLoad()
 	SetupEnemyCheckboxes();
 }
 
+function LoadData()
+{
+	fetch( "./data/BronzeCofferData.json" )
+	.then( response => response.text() )
+	.then( ( data ) =>
+	{
+		gBronzeCofferData = JSON.parse( data );
+	} );
+	
+	fetch( "./data/SilverCofferData.json" )
+	.then( response => response.text() )
+	.then( ( data ) =>
+	{
+		gSilverCofferData = JSON.parse( data );
+	} );
+	
+	fetch( "./data/ImpCofferData.json" )
+	.then( response => response.text() )
+	.then( ( data ) =>
+	{
+		gImpCofferData = JSON.parse( data );
+	} );
+	
+	fetch( "./data/CarrotData.json" )
+	.then( response => response.text() )
+	.then( ( data ) =>
+	{
+		gCarrotData = JSON.parse( data );
+	} );
+	
+	fetch( "./data/BNpcData.json" )
+	.then( response => response.text() )
+	.then( ( data ) =>
+	{
+		gBNpcData = JSON.parse( data );
+	} );
+	
+	//	Local Debugging
+	//gBronzeCofferData = JSON.parse( gTemp_BronzeCofferDataJSONString );
+	//gSilverCofferData = JSON.parse( gTemp_SilverCofferDataJSONString );
+	//gImpCofferData = JSON.parse( gTemp_ImpCofferDataJSONString );
+	//gCarrotData = JSON.parse( gTemp_CarrotDataJSONString );
+	//gBNpcData = JSON.parse( gTemp_BNpcDataJSONString );
+}
+
 function OnCheckChanged( checkbox )
 {
+	console.debug( 'In OnCheckChanged() for checkbox id=' + checkbox.id );
+	
 	if( checkbox.id == 'BronzeCofferCheckbox' )
 	{
 		if( checkbox.checked ) AddBronzeCoffers();
 		else RemoveBronzeCoffers();
 		
-		localStorage.setItem( "field_exploration.occult_crescent.south_horn.InteractiveMap.CheckboxState.ShowBronzeCoffers", checkbox.checked.toString() );
+		localStorage.setItem( 'field_exploration.occult_crescent.south_horn.InteractiveMap.CheckboxState.ShowBronzeCoffers', checkbox.checked.toString() );
 	}
 	else if( checkbox.id == 'SilverCofferCheckbox' )
 	{
 		if( checkbox.checked ) AddSilverCoffers();
 		else RemoveSilverCoffers();
 		
-		localStorage.setItem( "field_exploration.occult_crescent.south_horn.InteractiveMap.CheckboxState.ShowSilverCoffers", checkbox.checked.toString() );
+		localStorage.setItem( 'field_exploration.occult_crescent.south_horn.InteractiveMap.CheckboxState.ShowSilverCoffers', checkbox.checked.toString() );
 	}
 	else if( checkbox.id == 'ImpCofferCheckbox' )
 	{
 		if( checkbox.checked ) AddImpCoffers();
 		else RemoveImpCoffers();
 		
-		localStorage.setItem( "field_exploration.occult_crescent.south_horn.InteractiveMap.CheckboxState.ShowImpCoffers", checkbox.checked.toString() );
+		localStorage.setItem( 'field_exploration.occult_crescent.south_horn.InteractiveMap.CheckboxState.ShowImpCoffers', checkbox.checked.toString() );
 	}
 	else if( checkbox.id == 'CarrotCheckbox' )
 	{
 		if( checkbox.checked ) AddCarrots();
 		else RemoveCarrots();
 		
-		localStorage.setItem( "field_exploration.occult_crescent.south_horn.InteractiveMap.CheckboxState.ShowCarrots", checkbox.checked.toString() );
+		localStorage.setItem( 'field_exploration.occult_crescent.south_horn.InteractiveMap.CheckboxState.ShowCarrots', checkbox.checked.toString() );
 	}
+	else if( checkbox.classList.contains( 'bnpc-checkbox' ) )
+	{
+		var bNpcNameID = parseInt( checkbox.getAttribute( 'data-bnpc-name-id' ), 10 );
+		
+		if( checkbox.checked )
+		{
+			var bNpcInfo = GetDataForBNpc( bNpcNameID );
+			AddEnemies( bNpcNameID, bNpcInfo.Name, bNpcInfo.Spawns );
+		}
+		else
+		{
+			RemoveEnemies( bNpcNameID );
+		}
+		
+		localStorage.setItem( 'field_exploration.occult_crescent.south_horn.InteractiveMap.CheckboxState.ShowBNpc-' + bNpcNameID, checkbox.checked.toString() );
+	}
+}
+
+function GetDataForBNpc( bNpcID )
+{
+	//	It would probably be better to do this with a map.
+	for( let i = 0; i < gBNpcData.length; i++ )
+	{
+		if( gBNpcData[i].Key === bNpcID )
+		{
+			return gBNpcData[i].Value;
+		}
+	}	
 }
 
 //	Create default settings in local storage if nothing has been saved.
 function SetupDefaults()
 {
-	if( localStorage.getItem( "field_exploration.occult_crescent.south_horn.InteractiveMap.CheckboxState.ShowBronzeCoffers" ) === null )
+	if( localStorage.getItem( 'field_exploration.occult_crescent.south_horn.InteractiveMap.CheckboxState.ShowBronzeCoffers' ) === null )
 	{
-		localStorage.setItem( "field_exploration.occult_crescent.south_horn.InteractiveMap.CheckboxState.ShowBronzeCoffers", "true" )
+		localStorage.setItem( 'field_exploration.occult_crescent.south_horn.InteractiveMap.CheckboxState.ShowBronzeCoffers', "true" )
 	}
-	if( localStorage.getItem( "field_exploration.occult_crescent.south_horn.InteractiveMap.CheckboxState.ShowSilverCoffers" ) === null )
+	if( localStorage.getItem( 'field_exploration.occult_crescent.south_horn.InteractiveMap.CheckboxState.ShowSilverCoffers' ) === null )
 	{
-		localStorage.setItem( "field_exploration.occult_crescent.south_horn.InteractiveMap.CheckboxState.ShowSilverCoffers", "true" )
+		localStorage.setItem( 'field_exploration.occult_crescent.south_horn.InteractiveMap.CheckboxState.ShowSilverCoffers', "true" )
 	}
-	if( localStorage.getItem( "field_exploration.occult_crescent.south_horn.InteractiveMap.CheckboxState.ShowImpCoffers" ) === null )
+	if( localStorage.getItem( 'field_exploration.occult_crescent.south_horn.InteractiveMap.CheckboxState.ShowImpCoffers' ) === null )
 	{
-		localStorage.setItem( "field_exploration.occult_crescent.south_horn.InteractiveMap.CheckboxState.ShowImpCoffers", "false" )
+		localStorage.setItem( 'field_exploration.occult_crescent.south_horn.InteractiveMap.CheckboxState.ShowImpCoffers', "false" )
 	}
-	if( localStorage.getItem( "field_exploration.occult_crescent.south_horn.InteractiveMap.CheckboxState.ShowCarrots" ) === null )
+	if( localStorage.getItem( 'field_exploration.occult_crescent.south_horn.InteractiveMap.CheckboxState.ShowCarrots' ) === null )
 	{
-		localStorage.setItem( "field_exploration.occult_crescent.south_horn.InteractiveMap.CheckboxState.ShowCarrots", "true" )
+		localStorage.setItem( 'field_exploration.occult_crescent.south_horn.InteractiveMap.CheckboxState.ShowCarrots', "true" )
 	}
 }
 
 function SetupGeneralCheckboxes()
 {
-	var showBronzeCoffers = localStorage.getItem( "field_exploration.occult_crescent.south_horn.InteractiveMap.CheckboxState.ShowBronzeCoffers" ) === "true";
-	var showSilverCoffers = localStorage.getItem( "field_exploration.occult_crescent.south_horn.InteractiveMap.CheckboxState.ShowSilverCoffers" ) === "true";
-	var showImpCoffers = localStorage.getItem( "field_exploration.occult_crescent.south_horn.InteractiveMap.CheckboxState.ShowImpCoffers" ) === "true";
-	var showCarrots = localStorage.getItem( "field_exploration.occult_crescent.south_horn.InteractiveMap.CheckboxState.ShowCarrots" ) === "true";
+	var showBronzeCoffers = localStorage.getItem( 'field_exploration.occult_crescent.south_horn.InteractiveMap.CheckboxState.ShowBronzeCoffers' ) === 'true';
+	var showSilverCoffers = localStorage.getItem( 'field_exploration.occult_crescent.south_horn.InteractiveMap.CheckboxState.ShowSilverCoffers' ) === 'true';
+	var showImpCoffers = localStorage.getItem( 'field_exploration.occult_crescent.south_horn.InteractiveMap.CheckboxState.ShowImpCoffers' ) === 'true';
+	var showCarrots = localStorage.getItem( 'field_exploration.occult_crescent.south_horn.InteractiveMap.CheckboxState.ShowCarrots' ) === 'true';
 	
 	var bronzeCofferCheckbox = document.getElementById( 'BronzeCofferCheckbox' );
 	var silverCofferCheckbox = document.getElementById( 'SilverCofferCheckbox' );
@@ -90,15 +175,65 @@ function SetupGeneralCheckboxes()
 
 function SetupEnemyCheckboxes()
 {
-	
+	gBNpcData.forEach( e =>
+	{
+		SetupEnemyCheckbox( e.Key, e.Value.Name, e.Value.Spawns.length )
+	});
 }
 
-function AddMarkerIcon( icon, markerClass, x_Pct, y_Pct )
+function SetupEnemyCheckbox( bNpcNameID, bNpcName, recordCount )
+{
+	var showEnemy = localStorage.getItem( 'field_exploration.occult_crescent.south_horn.InteractiveMap.CheckboxState.ShowBNpc-' + bNpcNameID ) === 'true';
+	
+	var checkbox = document.createElement( 'input' );
+	var label = document.createElement( 'label' );
+	var br = document.createElement( 'br' );
+	
+	var checkboxIDString = 'bnpc-checkbox-' + bNpcNameID;
+	
+	checkbox.setAttribute( 'type', 'checkbox' );
+	checkbox.setAttribute( 'id', checkboxIDString );
+	checkbox.setAttribute( 'name', checkboxIDString );
+	checkbox.setAttribute( 'data-bnpc-name-id', bNpcNameID );
+	checkbox.setAttribute( 'data-bnpc-name', bNpcName );
+	checkbox.setAttribute( 'value', bNpcName );	//***** TODO: What does value actually do for checkboxes?
+	checkbox.setAttribute( 'onchange', 'OnCheckChanged( this )' );
+	checkbox.classList.add( 'bnpc-checkbox' );
+
+	label.setAttribute( 'for', checkboxIDString );
+	label.innerHTML = ' ' + bNpcName + ' (' + recordCount + ')';
+
+	gEnemyMapMarkerCheckboxContainer.appendChild( checkbox );
+	gEnemyMapMarkerCheckboxContainer.appendChild( label );
+	gEnemyMapMarkerCheckboxContainer.appendChild( br );
+	
+	checkbox.checked = showEnemy;
+	if( showEnemy ) OnCheckChanged( checkbox );
+}
+
+function AddMarkerPoint( markerClass, x_Pct, y_Pct, tooltip, bNpcNameID, gameVerFirstSeen, gameVerLastSeen )
+{
+	var marker = document.createElement( 'div' );
+	marker.classList.add( 'map-marker' );
+	marker.classList.add( 'marker-point' );
+	marker.classList.add( markerClass );
+	marker.setAttribute( 'style', 'left: ' + x_Pct + '%; top: ' + y_Pct + '%' );
+	marker.setAttribute( 'data-gamever-first-seen', gameVerFirstSeen );
+	marker.setAttribute( 'data-gamever-last-seen', gameVerLastSeen );
+	marker.setAttribute( 'data-bnpc-name-id', bNpcNameID );
+	marker.setAttribute( 'title', tooltip );
+
+	gMapContainer.appendChild( marker );
+}
+
+function AddMarkerIcon( icon, markerClass, x_Pct, y_Pct, gameVerFirstSeen, gameVerLastSeen )
 {
 	var marker = document.createElement( 'div' );
 	marker.classList.add( 'map-marker' );
 	marker.classList.add( markerClass );
 	marker.setAttribute( 'style', 'left: ' + x_Pct + '%; top: ' + y_Pct + '%' );
+	marker.setAttribute( 'data-gamever-first-seen', gameVerFirstSeen );
+	marker.setAttribute( 'data-gamever-last-seen', gameVerLastSeen );
 	
 	marker.appendChild( icon );
 	gMapContainer.appendChild( marker );
@@ -107,6 +242,7 @@ function AddMarkerIcon( icon, markerClass, x_Pct, y_Pct )
 function SetupIcon( imagePath, tooltip )
 {
 	var icon = document.createElement( 'img' );
+	icon.classList.add( 'marker-icon' );
 	icon.setAttribute( 'src', imagePath );
 	icon.setAttribute( 'title', tooltip );
 	return icon;
@@ -114,37 +250,47 @@ function SetupIcon( imagePath, tooltip )
 
 function AddBronzeCoffers()
 {
-	var icon = SetupIcon( 'images/060911_hr1.png', 'test tooltip' );
-	AddMarkerIcon( icon, 'bronze-coffer-marker', 50, 50 );
+	AddTreasureMarkers( gBronzeCofferData, 'Bronze Coffer', 'bronze-coffer-marker', 'images/060911_hr1.png' );
 }
 
 function AddSilverCoffers()
 {
-	var icon = SetupIcon( 'images/060912_hr1.png', 'test tooltip' );
-	AddMarkerIcon( icon, 'silver-coffer-marker', 60.2, 60.2 );
+	AddTreasureMarkers( gSilverCofferData, 'Silver Coffer', 'silver-coffer-marker', 'images/060912_hr1.png' );
 }
 
 function AddImpCoffers()
 {
-	var icon = SetupIcon( 'images/060913_hr1.png', 'test tooltip' );
-	AddMarkerIcon( icon, 'imp-coffer-marker', 70, 70 );
+	AddTreasureMarkers( gImpCofferData, 'Imp Coffer', 'imp-coffer-marker', 'images/060913_hr1.png' );
 }
 
 function AddCarrots()
 {
-	gCarrotCoords.forEach( e =>
-	{
-		var percentCoords = PixelCoordsToPercentCoords( e );
-		var mapCoords = PixelCoordsToMapCoords( e );
-		var icon = SetupIcon( 'images/025207_hr1_nobg_scaled.png', FormatMapCoordString( mapCoords ) );
-		AddMarkerIcon( icon, 'carrot-marker', percentCoords[0], percentCoords[1] );
-	} );
+	AddTreasureMarkers( gCarrotData, 'Fortune Carrot', 'carrot-marker', 'images/025207_hr1_nobg_scaled.png' );
 }
 
-function AddEnemies( bNpcDataIndex )
+function AddTreasureMarkers( dataObject, objectName, markerClass, iconPath )
 {
-	//var icon = SetupIcon( 'images/060911_hr1.png', 'test tooltip' );
-	//AddMarkerIcon( icon, 'bronze-coffer-marker', 50, 50 );
+	console.debug( 'Adding ' + dataObject.length + ' markers for "' +  objectName +'".' );
+	
+	dataObject.forEach( e =>
+	{
+		var percentCoords = PixelCoordsToPercentCoords( [e.X, e.Y] );
+		var mapCoords = PixelCoordsToMapCoords( [e.X, e.Y] );
+		var icon = SetupIcon( iconPath, objectName + '\r\n' + FormatMapCoordString( mapCoords ) );
+		AddMarkerIcon( icon, markerClass, percentCoords[0], percentCoords[1], e.FirstGameVer, e.LastGameVer );
+	});
+}
+
+function AddEnemies( bNpcNameID, bNpcName, spawnList )
+{
+	console.debug( 'Adding ' + spawnList.length + ' markers for bNpcNameID ' + bNpcNameID +'.' );
+	
+	spawnList.forEach( e =>
+	{
+		var percentCoords = PixelCoordsToPercentCoords( [e.X,e.Y] );
+		var mapCoords = PixelCoordsToMapCoords( [e.X,e.Y] );
+		AddMarkerPoint( 'enemy-marker', percentCoords[0], percentCoords[1], 'Lv. ' + e.Level + ' ' + bNpcName + '\r\n' + FormatMapCoordString( mapCoords ), bNpcNameID, e.FirstGameVer, e.LastGameVer );
+	});
 }
 
 function RemoveBronzeCoffers()
@@ -167,9 +313,13 @@ function RemoveCarrots()
 	document.querySelectorAll( '.carrot-marker' ).forEach( e => e.remove() );
 }
 
-function RemoveEnemies( bNpcDataIndex )
+function RemoveEnemies( bNpcNameID )
 {
+	var elements = document.querySelectorAll( '[data-bnpc-name-id="' + bNpcNameID + '"].enemy-marker' )
 	
+	console.debug( 'Removing ' + elements.length + ' markers for bNpcNameID ' +  bNpcNameID +'.' );
+	
+	elements.forEach( e => e.remove() );
 }
 
 function GameCoordsToPixelCoords( gameCoords, sizeFactor, offset )
