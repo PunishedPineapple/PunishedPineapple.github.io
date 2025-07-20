@@ -1,62 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>WaymarkLibrarian</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-<script>
-$( document ).ready(function(){
-	$('#currentVersions').load("./Support/CurrentVersions.dat");
-});
-</script>
-<style>
-h1
-{
-	color: #cccccc;
-}
-h2
-{
-	color: #cccccc;
-}
-p
-{
-	color: #cccccc;
-}
-li
-{
-	color: #cccccc;
-}
-td
-{
-	text-align: center;
-	color: #cccccc;
-	padding: 10px;
-}
-a:link
-{
-	color: gray;
-}
-a:visited
-{
-	color: gray;
-}
-a:hover
-{
-	color: gray;
-}
-a:active
-{
-	color: gray;
-}
-</style>
-</head>
-<body bgcolor="black">
-<h1>Current Versions:</h1>
-<p id="currentVersions"></p>
-<h1>Files:</h1>
-<p><a href="./Support/CurrentVersions.dat">CurrentVersions.dat</a></p>
-<p><a href="./Support/GameData.cfg">GameData.cfg</a></p>
-<p><a href="./Support/ZoneDictionary.dat">ZoneDictionary.dat</a></p>
-<h1>Program:</h1>
-<p><a href="https://github.com/PunishedPineapple/WaymarkLibrarian">https://github.com/PunishedPineapple/WaymarkLibrarian</a></p>
-</body>
+	<head>
+		<title>Waymark Librarian</title>
+		<link rel="icon" type="image/png" href="./images/025207_hr1_nobg.png">
+		<link rel="stylesheet" type="text/css" href="/css/general.css">
+		<!-- TODO: Dump jquery and do the fetch ourselves. -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+		<script>
+			$( document ).ready(function(){
+				$('#CurrentVersions').load("./Support/CurrentVersions.dat");
+			});
+		</script>
+	</head>
+
+	<body>
+		<h1>Current Versions:</h1>
+		<p id="CurrentVersions"></p>
+
+		<h1>Files:</h1>
+		<p><a href="./Support/CurrentVersions.dat">CurrentVersions.dat</a></p>
+		<p><a href="./Support/GameData.cfg">GameData.cfg</a></p>
+		<p><a href="./Support/ZoneDictionary.dat">ZoneDictionary.dat</a></p>
+
+		<h1>Program:</h1>
+		<p><a href="https://github.com/PunishedPineapple/WaymarkLibrarian">https://github.com/PunishedPineapple/WaymarkLibrarian</a></p>
+
+		<hr />
+		<p>Final Fantasy XIV (and all associated data reproduced here) is owned by and copyright Square Enix.</p>
+	</body>
 </html>
