@@ -65,6 +65,14 @@ li
 	color: #cccccc;
 }
 
+th
+{
+	text-align: center;
+	color: #cccccc;
+	background-color: #333333;
+	padding: 10px;
+}
+
 td
 {
 	text-align: center;

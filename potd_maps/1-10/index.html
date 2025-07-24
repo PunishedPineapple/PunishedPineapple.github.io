@@ -4,52 +4,9 @@
 		<title>PotD Map (Floors 1-10)</title>
 		<link rel="icon" type="image/png" href="../images/pomander_of_intuition.png">
 		<link rel="stylesheet" type="text/css" href="/css/general.css">
-		<script>
-			var gZoomStyleSheet = new CSSStyleSheet();
-			function OnLoad()
-			{
-				var savedSize = localStorage.getItem( 'deep-dungeon.potd.maps.thumbnail-size-vw' );
-				if( savedSize === null ) savedSize = 16;
-
-				document.adoptedStyleSheets.push(gZoomStyleSheet);
-				SetImageSize_vw( savedSize );
-			}
-			function SetImageSize_vw( size_vw )
-			{
-				gZoomStyleSheet.replaceSync( 'img{ max-width: ' + size_vw + 'vw; max-height: '+ size_vw + 'vw; }' );
-				localStorage.setItem( 'deep-dungeon.potd.maps.thumbnail-size-vw', size_vw )
-			}
-		</script>
-		<style>
-			img
-			{
-				width: fit-content;
-				height: fit-content;
-			}
-			#ThumbnailSizeSelector
-			{
-				position: sticky;
-				top: 3px;
-				left: 50px;
-				width: fit-content;
-				height: fit-content;
-				padding: 10px;
-				border-radius: 8px;
-				background: rgba( 0, 0, 0, 0.75 );
-			}
-			.zoom-button-header
-			{
-				color: #cccccc;
-				font-weight: bold;
-			}
-			.zoom-button
-			{
-				color: #aaaaaa;
-				text-decoration-line: underline;
-				cursor: pointer;
-				padding: 3px;
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="../css/MapTable.css">
+		<script src="/js/common.js"></script>
+		<script src="../js/MapTable.js"></script>
 	</head>
 
 	<body onLoad="OnLoad()">

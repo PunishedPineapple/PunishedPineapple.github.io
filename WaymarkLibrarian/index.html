@@ -2,20 +2,24 @@
 <html>
 	<head>
 		<title>Waymark Librarian</title>
-		<link rel="icon" type="image/png" href="./images/025207_hr1_nobg.png">
+		<link rel="icon" type="image/png" href="./images/061241_hr1.png">
 		<link rel="stylesheet" type="text/css" href="/css/general.css">
-		<!-- TODO: Dump jquery and do the fetch ourselves. -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-		<script>
-			$( document ).ready(function(){
-				$('#CurrentVersions').load("./Support/CurrentVersions.dat");
-			});
-		</script>
+		<script src="/js/common.js"></script>
+		<script src="./VersionInformation.js"></script>
 	</head>
 
-	<body>
+	<body onLoad="OnLoad()">
 		<h1>Current Versions:</h1>
-		<p id="CurrentVersions"></p>
+		<p id="AggroDataVersionText" class="loading-message">Loading</p>
+		<table>
+			<thead>
+				<tr>
+					<th>File</th>
+					<th>Version</th>
+				</tr>
+			</thead>
+			<tbody id="VersionDataTableBody" />
+		</table>
 
 		<h1>Files:</h1>
 		<p><a href="./Support/CurrentVersions.dat">CurrentVersions.dat</a></p>

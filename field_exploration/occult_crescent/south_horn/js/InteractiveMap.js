@@ -49,22 +49,22 @@ async function OnLoad()
 //	Load all of data that is available to show as markers on the map.
 async function LoadData()
 {
-	var basePath = 'https://punishedpineapple.github.io/field_exploration/occult_crescent/south_horn/data/';
-	//var basePath = './data/';
+	//var basePath = 'https://punishedpineapple.github.io/field_exploration/occult_crescent/south_horn/data/';
+	var basePath = './data/';
 
-	var bnpcPromise = FetchAndParse( basePath + 'BNpcData.json' )
+	var bnpcPromise = FetchAndParseJSON( basePath + 'BNpcData.json' )
 	.then( (data) => gBNpcData = data );
 
-	var bronzePromise = FetchAndParse( basePath + 'BronzeCofferData.json' )
+	var bronzePromise = FetchAndParseJSON( basePath + 'BronzeCofferData.json' )
 	.then( (data) => gBronzeCofferData = data );
 
-	var silverPromise = FetchAndParse( basePath + 'SilverCofferData.json' )
+	var silverPromise = FetchAndParseJSON( basePath + 'SilverCofferData.json' )
 	.then( (data) => gSilverCofferData = data );
 
-	var impPromise = FetchAndParse( basePath + 'ImpCofferData.json' )
+	var impPromise = FetchAndParseJSON( basePath + 'ImpCofferData.json' )
 	.then( (data) => gImpCofferData = data );
 
-	var carrotPromise = FetchAndParse( basePath + 'CarrotData.json' )
+	var carrotPromise = FetchAndParseJSON( basePath + 'CarrotData.json' )
 	.then( (data) => gCarrotData = data );
 
 	console.debug( 'Finished starting data load.' );
@@ -385,42 +385,4 @@ function FormatMapCoordString( mapCoords )
 	var truncatedX = Math.floor( mapCoords[0] * 10.0 ) / 10.0;
 	var truncatedY = Math.floor( mapCoords[1] * 10.0 ) / 10.0;
 	return 'X: ' + truncatedX.toFixed( 1 ) + ', Y: ' + truncatedY.toFixed( 1 );
-}
-
-//	Helper while debugging.
-async function DEBUG_Sleep( time_ms )
-{
-	return new Promise( whatever => setTimeout( whatever, time_ms ) ).then( () => console.debug( 'Finished waiting ' + time_ms + ' ms.' ));
-}
-
-//	Fetch and parse a JSON data file.
-async function FetchAndParse( filePath )
-{
-	var result;
-
-	await fetch( filePath )
-	.then
-	(
-		response => ValidateFetchResponseAndGetText( response, filePath ),
-		error => ThrowFetchError( error, filePath )
-	)
-	.then( ( data ) =>
-	{
-		result = JSON.parse( data );
-	});
-
-	return result;
-}
-
-//	Fetch response validation.
-function ValidateFetchResponseAndGetText( response, filePath )
-{
-	if( !response.ok ) throw new Error( 'Error while fetching data from "' + filePath + '": ' + response.status + ' (' + response.statusText + ')' );
-	return response.text();
-}
-
-//	Fetch promise response error handler.
-function ThrowFetchError( error, filePath )
-{
-	throw new Error( 'Error while fetching data from "' + filePath + '": ' + error );
 }

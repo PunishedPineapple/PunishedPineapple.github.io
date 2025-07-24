@@ -1,0 +1,31 @@
+img
+{
+	width: fit-content;
+	height: fit-content;
+}
+
+#ThumbnailSizeSelector
+{
+	position: sticky;
+	top: 3px;
+	left: 50px;
+	width: fit-content;
+	height: fit-content;
+	padding: 10px;
+	border-radius: 8px;
+	background: rgba( 0, 0, 0, 0.75 );
+}
+
+.zoom-button-header
+{
+	color: #cccccc;
+	font-weight: bold;
+}
+
+.zoom-button
+{
+	color: #aaaaaa;
+	text-decoration-line: underline;
+	cursor: pointer;
+	padding: 3px;
+}
