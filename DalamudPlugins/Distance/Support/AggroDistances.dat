@@ -1,4 +1,4 @@
-Version = 2025.08.07.0000.0000-001
+Version = 2025.10.13.0000.0000-001
 142=3046=8=Typhon
 142=3047=8=Ultros
 143=3330=40=Vishap
@@ -108,7 +108,7 @@ Version = 2025.08.07.0000.0000-001
 696=5631=14=Catastrophe
 697=5633=14=Halicarnassus
 698=6052=14=Exdeath
-698=0=9999=-----
+698=6055=14=Neo Exdeath
 719=6386=7=Dreaming Kshatriya
 720=6386=7=Dreaming Kshatriya
 730=5640=-21=Shinryu
@@ -120,7 +120,6 @@ Version = 2025.08.07.0000.0000-001
 752=7127=14=Phantom Train
 754=7107=14=Guardian
 755=7131=14=Kefka
-755=0=9999=-----
 758=7092=7=Byakko
 761=7221=14=Rathalos
 762=7221=14=Rathalos
@@ -244,10 +243,15 @@ Version = 2025.08.07.0000.0000-001
 1238=9707=7=Fatebreaker
 1241=13624=5=Cloud of Darkness
 1243=13029=1=Queen Eternal
+1252=13732=15=Phobos
+1252=13730=15=Triton
+1252=13731=15=Nereid
 1257=13778=10=Dancing Green
 1259=13822=9=Sugar Riot
 1261=13756=10=Brute Abombinator
 1263=13843=4=Howling Blade
+1272=7702=7=Suzaku
 1295=14093=1=Necron
 1296=14093=1=Necron
 1302=7922=7=Seiryu
+1306=14237=7=Guardian Arkveld
