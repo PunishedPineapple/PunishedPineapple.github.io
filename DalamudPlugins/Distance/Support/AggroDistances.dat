@@ -1,4 +1,4 @@
-Version = 2025.12.23.0000.0000-002
+Version = 2025.12.23.0000.0000-003
 142=3046=8=Typhon
 142=3047=8=Ultros
 143=3330=40=Vishap
@@ -200,6 +200,7 @@ Version = 2025.12.23.0000.0000-002
 1047=1644=11=Garuda
 1048=2137=8=The Ultima Weapon
 1067=718=14=Whiskerwall Kupdi Koop
+1069=11419=7=Thorne Knight
 1071=10298=14=Barbariccia
 1072=10298=14=Barbariccia
 1081=0=9999=-----
@@ -258,3 +259,4 @@ Version = 2025.12.23.0000.0000-002
 1321=14300=10=Vamp Fatale
 1323=14370=10=Red Hot
 1325=14305=10=The Tyrant
+1327=14378=1=Lindwurm
